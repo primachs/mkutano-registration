@@ -348,7 +348,7 @@
   // Web3Forms setup: create a new form at https://web3forms.com and
   // paste its access key below before publishing.
   // ------------------------------------------------------------------
-  const WEB3FORMS_ACCESS_KEY = "YOUR_ACCESS_KEY_HERE";
+  const WEB3FORMS_ACCESS_KEY = "0eb48fb6-ab89-48b7-a00f-e3ecdcf14132";
 
   const form = document.getElementById('mkutanoForm');
   const submitBtn = document.getElementById('submitBtn');
@@ -372,7 +372,7 @@
 
     const formData = new FormData(form);
     formData.append("access_key", WEB3FORMS_ACCESS_KEY);
-    formData.append("subject", "New Registration Mkutano wa Wadau wa TanTrade");
+    formData.append("subject", "New Registration — Mkutano wa Wadau wa TanTrade");
 
     try {
       const res = await fetch("https://api.web3forms.com/submit", {
